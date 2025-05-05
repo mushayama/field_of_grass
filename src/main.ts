@@ -9,6 +9,7 @@ import "@babylonjs/core/Debug/debugLayer"; // Augments the scene with the debug 
 import "@babylonjs/inspector";
 import { CreateGroundFromHeightMap } from "@babylonjs/core";
 import generatePOC2 from "./poc2";
+import generatePOC3 from "./poc3/poc3";
 
 const canvas: HTMLCanvasElement = document.getElementById(
   "renderCanvas"
@@ -38,7 +39,9 @@ const createScene = (): Scene => {
   if (window.location.href.includes("poc1")) {
     generatePOC1(scene);
   } else if (window.location.href.includes("poc2")) {
-    generatePOC2(scene, engine);
+    generatePOC2(scene);
+  } else if (window.location.href.includes("poc3")) {
+    generatePOC3(scene);
   } else {
     // const sphere: BABYLON.Mesh = BABYLON.MeshBuilder.CreateSphere("sph", {
     //   segments: 5,

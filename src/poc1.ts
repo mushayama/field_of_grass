@@ -1,6 +1,7 @@
 import { Scene } from "@babylonjs/core/Scene";
 // import { CreateSphere } from "@babylonjs/core/Meshes/Builders/sphereBuilder";
 
+//https://playground.babylonjs.com/#2322Y7#0
 import { FurMaterial } from "@babylonjs/materials/fur/furMaterial";
 import {
   Color3,
